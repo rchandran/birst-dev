@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrillMaps>
+  <DrillMap>
+    <Id>c932e2a2-5337-4c58-ada1-bbc35ae4e7ca</Id>
+    <Name>AgentToGroup</Name>
+    <Enabled>true</Enabled>
+    <CreatedDate>2016-02-22 08:41:03 UTC</CreatedDate>
+    <CreatedBy>redshiftadmin@liveopslabs.com</CreatedBy>
+    <ModifiedDate>2016-02-22 08:45:07 UTC</ModifiedDate>
+    <ModifiedBy>redshiftadmin@liveopslabs.com</ModifiedBy>
+    <DrillRows>
+      <DrillRow>
+        <Id>5d6a7a00-3d35-447e-bafb-6818efeaa8fc</Id>
+        <DrillType>Drill Down</DrillType>
+        <DrillToDashboard />
+        <Label>resource_id</Label>
+        <HeaderLabel>resource_id</HeaderLabel>
+        <Dimension>Agent</Dimension>
+        <Column>resource_id</Column>
+        <ColumnType>Dimension</ColumnType>
+        <DrillDownColumn>
+          <Label>Group.group_id</Label>
+          <DrillColumns>
+            <DrillColumn>
+              <Dimension>Group</Dimension>
+              <Column>group_id</Column>
+              <Label>group_id</Label>
+              <HeaderLabel>group_id</HeaderLabel>
+            </DrillColumn>
+          </DrillColumns>
+        </DrillDownColumn>
+      </DrillRow>
+      <DrillRow>
+        <Id>7232632C-68F7-0AED-D7CF-0825B30121D7</Id>
+        <DrillType>Drill Down</DrillType>
+        <DrillToDashboard />
+        <Label>group_id</Label>
+        <HeaderLabel>group_id</HeaderLabel>
+        <Dimension>Group</Dimension>
+        <Column>group_id</Column>
+        <ColumnType>Dimension</ColumnType>
+        <DrillDownColumn>
+          <Label>Group.name</Label>
+          <DrillColumns>
+            <DrillColumn>
+              <Dimension>Group</Dimension>
+              <Column>name</Column>
+              <Label>name</Label>
+              <HeaderLabel>name</HeaderLabel>
+            </DrillColumn>
+          </DrillColumns>
+        </DrillDownColumn>
+      </DrillRow>
+    </DrillRows>
+    <Groups />
+  </DrillMap>
+  <DrillMap>
+    <Id>437c875c-5f60-425b-b75a-74fea98b2fd1</Id>
+    <Name>GroupToAgent</Name>
+    <Enabled>true</Enabled>
+    <CreatedDate>2016-02-22 08:50:38 UTC</CreatedDate>
+    <CreatedBy>redshiftadmin@liveopslabs.com</CreatedBy>
+    <DrillRows>
+      <DrillRow>
+        <Id>21785c48-a634-4494-9cc1-b83823a59b24</Id>
+        <DrillType>Drill Down</DrillType>
+        <DrillToDashboard />
+        <Label>group_id</Label>
+        <HeaderLabel>group_id</HeaderLabel>
+        <Dimension>Group</Dimension>
+        <Column>group_id</Column>
+        <ColumnType>Dimension</ColumnType>
+        <DrillDownColumn>
+          <Label>Agent.resource_id</Label>
+          <DrillColumns>
+            <DrillColumn>
+              <Dimension>Agent</Dimension>
+              <Column>resource_id</Column>
+              <Label>resource_id</Label>
+              <HeaderLabel>resource_id</HeaderLabel>
+            </DrillColumn>
+          </DrillColumns>
+        </DrillDownColumn>
+      </DrillRow>
+      <DrillRow>
+        <Id>8fcac1bc-71fc-4c7f-9e5d-b56eb44958b3</Id>
+        <DrillType>Drill Down</DrillType>
+        <DrillToDashboard />
+        <Label>resource_id</Label>
+        <HeaderLabel>resource_id</HeaderLabel>
+        <Dimension>Agent</Dimension>
+        <Column>resource_id</Column>
+        <ColumnType>Dimension</ColumnType>
+        <DrillDownColumn>
+          <Label>Agent.full_name</Label>
+          <DrillColumns>
+            <DrillColumn>
+              <Dimension>Agent</Dimension>
+              <Column>full_name</Column>
+              <Label>full_name</Label>
+              <HeaderLabel>full_name</HeaderLabel>
+            </DrillColumn>
+          </DrillColumns>
+        </DrillDownColumn>
+      </DrillRow>
+    </DrillRows>
+    <Groups />
+  </DrillMap>
+</DrillMaps>
+

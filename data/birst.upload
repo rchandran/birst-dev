@@ -1,0 +1,8 @@
+firstrowhasheaders=true
+ignoreinternalquotes=false
+beginskip=0
+endskip=0
+consolidatelikesources=false
+forcenumcolumns=false
+quotechar="
+ignorecarriagereturn=false
