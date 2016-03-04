@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.successmetricsinc.catalog.CatalogPermission>
+  <View>
+    <GroupName>
+      <String>USER$</String>
+    </GroupName>
+  </View>
+  <Modify>
+    <GroupName>
+      <String>USER$</String>
+    </GroupName>
+  </Modify>
+</com.successmetricsinc.catalog.CatalogPermission>
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_65" class="java.beans.XMLDecoder">
+<java version="1.8.0_45" class="java.beans.XMLDecoder">
 <object class="com.birst.dataconductor.DataConductorConfig">
   <void property="localETLConfig" />
   <void property="taskList">
@@ -550,6 +550,123 @@
               </void>
             </object>
           </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dynamic_queues</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>interaction</string>
+              </void>
+              <void property="query">
+                <string>select * from interaction where start_utc &gt;= '2016-02-19'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>interaction_resource</string>
+              </void>
+              <void property="query">
+                <string>select * from interaction_resource where load_timestamp &gt;= '2016-02-19'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
         </void>
         <void property="hour">
           <int>1</int>
@@ -889,6 +1006,82 @@
               </void>
             </object>
           </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>interaction</string>
+              </void>
+              <void property="query">
+                <string>select * from interaction where start_utc &gt;= '2016-02-19'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dynamic_queues</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
         </void>
         <void property="hour">
           <int>1</int>
@@ -964,6 +1157,586 @@
               </void>
               <void property="query">
                 <string>select * from v_duration where load_timestamp &gt;= '2016-02-19'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+        </void>
+        <void property="hour">
+          <int>1</int>
+        </void>
+        <void property="day">
+          <int>1</int>
+        </void>
+        <void property="numRetries">
+          <int>1</int>
+        </void>
+        <void property="processAutomatically">
+          <boolean>true</boolean>
+        </void>
+      </object>
+    </void>
+    <void method="add">
+      <object class="com.birst.dataconductor.Task">
+        <void property="name">
+          <string>Incre_load_all</string>
+        </void>
+        <void property="enabled">
+          <boolean>true</boolean>
+        </void>
+        <void property="sourceList">
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_channel</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_direction</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_flows</string>
+              </void>
+              <void property="query">
+                <string>select * from dim_flows where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_groups</string>
+              </void>
+              <void property="query">
+                <string>select * from dim_groups where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_groups_by_resource</string>
+              </void>
+              <void property="query">
+                <string>select * from dim_groups_by_resource where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_tenants</string>
+              </void>
+              <void property="query">
+                <string>select * from dim_tenants where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_users</string>
+              </void>
+              <void property="query">
+                <string>select * from dim_users where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_queues</string>
+              </void>
+              <void property="query">
+                <string>select * from dim_queues where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>v_instance</string>
+              </void>
+              <void property="query">
+                <string>select * from v_instance where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>v_duration</string>
+              </void>
+              <void property="query">
+                <string>select * from v_duration where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dim_event_type</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>interaction</string>
+              </void>
+              <void property="query">
+                <string>select * from interaction where start_utc &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>dynamic_queues</string>
+              </void>
+              <void property="query">
+                <string>select * from dynamic_queues where load_timestamp &gt;= 'V{LoadStartTime}'</string>
+              </void>
+              <void property="sshTunnel" />
+              <void property="method">
+                <string>GET</string>
+              </void>
+              <void property="ignoreBadServerCertificates">
+                <boolean>false</boolean>
+              </void>
+              <void property="driverName">
+                <string>org.postgresql.Driver</string>
+              </void>
+              <void property="serverName">
+                <string>V{ServerName}</string>
+              </void>
+              <void property="databaseName">
+                <string>V{DatabaseName}</string>
+              </void>
+              <void property="username">
+                <string>titanadmin</string>
+              </void>
+              <void property="password">
+                <string>4Ul8Ah59qen13hRd5L/ZseNAkGpdrfijO2jCtAzLjW4=</string>
+              </void>
+              <void property="port">
+                <int>5439</int>
+              </void>
+            </object>
+          </void>
+          <void method="add">
+            <object class="com.birst.dataconductor.QuerySource">
+              <void property="type">
+                <int>1</int>
+              </void>
+              <void property="schemaName">
+                <string>public</string>
+              </void>
+              <void property="tableName">
+                <string>interaction_resource</string>
+              </void>
+              <void property="query">
+                <string>select * from interaction_resource where load_timestamp &gt;= 'V{LoadStartTime}'</string>
               </void>
               <void property="sshTunnel" />
               <void property="method">
